@@ -1,0 +1,51 @@
+import mongoose from "mongoose";
+const Schema = mongoose.Schema;
+
+const UserSchema = new Schema({
+  firstName: {
+    type: String,
+    required: false,
+  },
+  lastName: {
+    type: String,
+    required: false,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  contact: {
+    type: Number,
+    required: true,
+  },
+  dob: {
+    type: String,
+    required: false,
+  },
+  gender: {
+    type: String,
+    required: false,
+  },
+  otp: {
+    type: String,
+    required: null,
+  },
+  avatar: {
+    type: String,
+    required: null,
+  },
+  status: {
+    type: Number,
+    default: 1,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
+  },
+});
+
+export default mongoose.model("User", UserSchema);

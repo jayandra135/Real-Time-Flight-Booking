@@ -1,0 +1,21 @@
+from state name
+date
+passeneger, child and infant
+travel class :economy
+price
+flight name
+airport name
+
+flight time
+
+
+
+flights:
+
+airlineDetails
+airportDetails
+airlineFlights
+
+price
+travelClass
+passeneger
